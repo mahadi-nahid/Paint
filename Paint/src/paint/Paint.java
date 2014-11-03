@@ -1,17 +1,21 @@
 
 package paint;
 
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+
 /**
  *
  * @author MdMahadiHasan
  */
 public class Paint {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        PaintFrame paintFrame = new PaintFrame();
+        paintFrame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        paintFrame.setSize(1000, 700);
+        paintFrame.setVisible(true);
+        paintFrame.setResizable(false);
+        paintFrame.setLocation(200,50);
     }
     
 }
